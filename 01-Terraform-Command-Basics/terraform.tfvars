@@ -19,3 +19,6 @@ db_subnet_address = [ "10.0.12.0/24" ]
 
 bastion_subnet_name = "dbsubnet"
 bastion_subnet_address = [ "10.0.13.0/24" ]
+
+bastion_service_subnet_name = "AzureBastionSubnet"
+bastion_service_address_prefix = [ "10.0.1.0/27" ]
