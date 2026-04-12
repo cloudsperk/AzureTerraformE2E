@@ -20,6 +20,7 @@ resource "azurerm_bastion_host" "bastion_host" {
   name = "${local.resource_name_prefix}-bastion-service"
   location = azurerm_resource_group.rg.location
   resource_group_name = azurerm_resource_group.rg.name
+#   sku = "Standard"
 
   ip_configuration {
     name = "configuration"
