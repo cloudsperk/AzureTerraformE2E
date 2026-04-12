@@ -4,7 +4,7 @@ resource "azurerm_public_ip" "bastion_host_public_ip" {
   resource_group_name = azurerm_resource_group.rg.name
   location = azurerm_resource_group.rg.location
   allocation_method = "Static"
-  sku = "Stadard"
+  sku = "Standard"
 }
 
 # Resource 2 - Create network interface
