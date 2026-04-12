@@ -1,5 +1,5 @@
 # Create null resource and provisioners 
-resource "null" "null_copy_ssh_key_to_bastion" {
+resource "null_resource" "null_copy_ssh_key_to_bastion" {
   depends_on = [ azurerm_linux_virtual_machine.bastion_host_linuxvm ]
   # Connection block for provisioner to connect to azure VM Instance
   connection {
